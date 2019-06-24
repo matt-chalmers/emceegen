@@ -134,7 +134,7 @@ export class Algorithm extends EventEmitter {
 
         for ( let generation = 1; generation <= iterations; generation++ ) {
 
-            let population = await opts.select.run(population, popSize);
+            population = await opts.select.run(population, popSize);
             this.emit('selection', {population});
 
             let numOffspring = Math.floor(population.length / 2);
