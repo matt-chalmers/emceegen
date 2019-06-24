@@ -34,7 +34,7 @@ class AbstractSelector {
  */
 class Truncation extends AbstractSelector {
     run(population, targetPopSize) {
-        this,this.validate(population, targetPopSize);
+        this.validate(population, targetPopSize);
         return population => population.slice(-targetPopSize);
     }
 }
