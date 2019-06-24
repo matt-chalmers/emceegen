@@ -1,6 +1,6 @@
 {
   "name": "genemcee",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple genetic algorithm library",
   "main": "dist/index.js",
   "scripts": {
