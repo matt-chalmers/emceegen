@@ -8,7 +8,7 @@ class AbstractSelector {
      * Perform a population selection
      *
      * @param {object[]} population - an array of population genomes
-     * @param {NUmber} targetPopSize - the size we must reduce the population to
+     * @param {Number} targetPopSize - the size we must reduce the population to
      * @return {object[]} new population
      */
     run(population, targetPopSize) {
@@ -35,7 +35,7 @@ class AbstractSelector {
 class Truncation extends AbstractSelector {
     run(population, targetPopSize) {
         this.validate(population, targetPopSize);
-        return population => population.slice(-targetPopSize);
+        return population.slice(-targetPopSize);
     }
 }
 
