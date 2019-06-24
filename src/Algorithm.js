@@ -21,7 +21,6 @@ export class Algorithm extends EventEmitter {
             stopCheck: function to check if we should stop the algorithm, called after each generation
             mutate: function to mutate a genome
             lazyScore: boolean, controls whether to only call fitness func once for a given genome
-            steadyState:
         }
      *
      * */

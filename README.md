@@ -16,7 +16,6 @@ A simple genetic algorithm library
          mutate,
          fitness,
          stopCheck,
-         steadyState,
          cmp,
      }
     const alg = new Algorithm(opts);
