@@ -1,0 +1,40 @@
+{
+  "name": "genemcee",
+  "version": "1.0.0",
+  "description": "A simple genetic algorithm library",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "npm run build > /dev/null && node dist/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-chalmers/genemcee.git"
+  },
+  "keywords": [
+    "genetic",
+    "algorithm",
+    "optimisation"
+  ],
+  "author": "Matt Chalmers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matt-chalmers/genemcee/issues"
+  },
+  "homepage": "https://github.com/matt-chalmers/genemcee#readme",
+  "dependencies": {
+    "config": "^3.1.0",
+    "lodash": "^4.17.11",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
+  }
+}
