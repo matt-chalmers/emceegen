@@ -130,12 +130,9 @@ export class Algorithm extends EventEmitter {
         let leader = population[population.length - 1];
         const memo = [leader];
         this.emit('evaluation', {leader, population});
-        this.emit('generation', {generation: 0, leader, parents: {}, population});
+        this.emit('generation', {generation: 0, leader, population});
 
         for ( let generation = 1; generation <= iterations; generation++ ) {
-
-            population = await opts.select.run(population, popSize);
-            this.emit('selection', {population});
 
             let numOffspring = Math.floor(population.length / 2);
             let offspring = await this._breedChildren(numOffspring, population);
@@ -147,6 +144,10 @@ export class Algorithm extends EventEmitter {
             leader = population[population.length - 1];
             memo.push(leader);
             this.emit('evaluation', {leader, population});
+
+            population = await opts.select.run(population, popSize);
+            this.emit('selection', {population});
+            
             this.emit('generation', {generation, leader, population});
 
             if ( opts.stopCheck(leader, population) ) {

@@ -23,7 +23,7 @@ class AbstractSelector {
      * @throws {Error} Error when invalid
      */
     validate(population, targetPopSize) {
-        if (targetPopSize < population.length) {
+        if (targetPopSize > population.length) {
             throw new Error('Population size too small, cannot apply selector');
         }
     }
