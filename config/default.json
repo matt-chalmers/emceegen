@@ -1,7 +1,0 @@
-{
-    "logging" : {
-        "level" : "info",
-        "fileLogging" : true,
-        "consoleLogging" : false
-    }
-}
