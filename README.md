@@ -1,5 +1,5 @@
 # genemcee
-A simple genetic algorithm library
+A simple genetic algorithm library for Node.js
 
 #### Install
 `npm install genemcee`
