@@ -1,6 +1,6 @@
 {
   "name": "genemcee",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple genetic algorithm library",
   "main": "dist/index.js",
   "scripts": {
@@ -23,8 +23,7 @@
     "url": "https://github.com/matt-chalmers/genemcee/issues"
   },
   "homepage": "https://github.com/matt-chalmers/genemcee#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
